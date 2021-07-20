@@ -77,7 +77,7 @@ Note: getter/setter accessors added in ES5
 
 --
 
-## Defining a property
+## Property Descriptors
 
 ```js [1-8|2|3|4-7|10]
 const user = Object.defineProperty(
@@ -96,7 +96,7 @@ Note: since ES5
 
 --
 
-## Defining multiple properties
+## Property Descriptors
 
 ```js [1-7|4|5|9]
 const user = Object.defineProperties(
@@ -347,7 +347,7 @@ log.something.about.javascript.witchcraft()
 
 # Type Gymnastics
 
-```ts [|1-4|6-7|10|12|14-16]
+```ts [|1-4|6-8|10|12|14-16]
 const target = {
   name: "Jim",
   _secret: "foo",
