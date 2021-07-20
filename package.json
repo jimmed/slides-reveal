@@ -1,4 +1,11 @@
 {
   "name": "@jimmed/slides",
-  "author": "Jim O'Brien <npm@jimmed.net>"
+  "version": "1.0.0",
+  "author": "Jim O'Brien <npm@jimmed.net>",
+  "scripts": {
+    "start": "reveal-md"
+  },
+  "devDependencies": {
+    "reveal-md": "^5.1.2"
+  }
 }
