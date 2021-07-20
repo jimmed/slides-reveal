@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Jim O'Brien <npm@jimmed.net>",
   "scripts": {
-    "start": "reveal-md"
+    "start": "reveal-md slides -w"
   },
   "devDependencies": {
     "reveal-md": "^5.1.2"
