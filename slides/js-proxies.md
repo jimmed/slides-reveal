@@ -53,7 +53,7 @@ console.log(user.name)
 
 ---
 
-# Protecting variables
+# Protecting Properties
 
 --
 
@@ -116,7 +116,7 @@ Note: since ES5
 
 ## Private properties
 
-```js
+```js [|1-12|2|5|9|13|13-14]
 class User {
   #name
 
@@ -328,11 +328,12 @@ const allUsers = ["Alice", "Bob"].map(user)
 
 ## Weird Fluent Interfaces
 
-```js [|1-4|3|2|6|8]
-const logger = (...items) => new Proxy({}, {
-  apply: () => console.log(...items)
-  get: (_, k) => logger(...items, k)
-})
+```js [|1-5|4|3|7|9]
+const logger = (...items) =>
+  new Proxy(() => {}, {
+    apply: () => console.log(...items),
+    get: (_, k) => logger(...items, k),
+  })
 
 const log = logger()
 
