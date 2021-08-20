@@ -1,0 +1,6 @@
+{
+  // Allow multiple top-level headings in a document
+  "MD025": false,
+  // Allow HTML elements
+  "MD033": false
+}
